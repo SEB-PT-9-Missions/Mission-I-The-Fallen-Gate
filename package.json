@@ -1,0 +1,25 @@
+{
+  "name": "mission-i-the-fallen-gate",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sayed-2003/Mission-I-The-Fallen-Gate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sayed-2003/Mission-I-The-Fallen-Gate/issues"
+  },
+  "homepage": "https://github.com/Sayed-2003/Mission-I-The-Fallen-Gate#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
