@@ -8,12 +8,18 @@
    Read the errors, test your ideas, and repair what is broken.
    ========================================================= */
 
+
+// ERRORS
+// 1. / BEFORE THE GATE
+// 2. () after the express
+// 3. send instead of sent
+
 const express = require('express')
 
-const app = express
+const app = express() 
 
-app.get('gate', function (req, res) {
-  res.sent('🏰 The gates of Codoria are open!')
+app.get('/gate', (req, res) => {
+  res.send('🏰 The gates of Codoria are open!')
 })
 
 app.listen(3000, function () {
