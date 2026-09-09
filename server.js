@@ -10,13 +10,13 @@
 
 const express = require('express')
 
-const app = express
+const app = express()
 
-app.get('gate', function (req, res) {
-  res.sent('🏰 The gates of Codoria are open!')
+app.get('/gate',(req, res) => {
+  res.send('🏰 The gates of Codoria are open!')
 })
 
-app.listen(3000, function () {
+app.listen(3000,() => {
   console.log('⚔️ Royal server is running on port 3000')
 })
 
@@ -26,3 +26,7 @@ app.listen(3000, function () {
    Create a new GET route for /king that displays:
    👑 Welcome, Your Majesty!
    ========================================================= */
+
+   app.get('/king', (req, res) => {
+     res.send('👑 Welcome, Your Majesty!')
+   })
